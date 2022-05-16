@@ -31,3 +31,8 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+      - name: Run a multi-line script
+      run: |
+        echo Add ${{github.sha}},
+        echo test, and deploy your project.
+
