@@ -31,6 +31,7 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+      - run: npm run chromatic
       - run: |
           echo "Hello World"
-          echo "Yaaaay"
+          echo ${{ github.sha }}
