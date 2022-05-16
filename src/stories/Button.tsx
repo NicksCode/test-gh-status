@@ -30,7 +30,7 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = "medium",
-  backgroundColor = "orange",
+  backgroundColor = "green",
   label,
   ...props
 }: ButtonProps) => {
