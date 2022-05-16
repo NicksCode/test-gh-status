@@ -42,4 +42,4 @@ jobs:
           echo ${{secrets.CHROMATIC_PROJECT_TOKEN}}
           echo ${{secrets.github.event.pull_request.head.sha}}
           echo ${{secrets.github.head_ref}}
-          echo${{secrets.github.repository}}
+          echo ${{secrets.github.repository}}
