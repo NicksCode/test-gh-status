@@ -35,7 +35,9 @@ jobs:
       - run: npm test
       - run: npm run chromatic
       - run: |
-          echo "Hello World: github.sha"
+          echo "Hello World"
           echo ${{ github.sha }}
-          echo "Hello World: github.GITHUB_REF"
-          echo ${{ github.GITHUB_REF }}
+          echo ${{ github.base_ref }}
+          echo ${{ github.head_ref }}
+          echo ${{ github.ref }}
+          echo ${{ github.repository }}
