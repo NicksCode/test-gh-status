@@ -42,3 +42,4 @@ jobs:
           echo ${{ github.event.pull_request.head.sha }}
           echo ${{ github.head_ref }}
           echo ${{ github.repository }}
+          echo ${{ github.event_name }}
